@@ -1,0 +1,9 @@
+.idea/angular2-test.iml
+.idea/compiler.xml
+.idea/copyright/
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+node_modules/
+typings/
+
