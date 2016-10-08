@@ -3,7 +3,11 @@
 .idea/copyright/
 .idea/misc.xml
 .idea/modules.xml
+.idea/typescript-compiler.xml
 .idea/workspace.xml
 node_modules/
 typings/
 
+*.js
+!systemjs.config.js
+*.js.map
