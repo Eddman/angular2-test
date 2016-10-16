@@ -5,6 +5,8 @@ import { HEROES } from './mock-heros';
 
 @Injectable()
 export class HeroService {
+    private selectedHero: Hero;
+
     getHeroes(): Promise<Hero[]> {
         return Promise.resolve(HEROES);
     }
@@ -12,6 +14,14 @@ export class HeroService {
     getHero(id: number): Promise<Hero> {
         return this.getHeroes()
             .then(heroes => heroes.find(hero => hero.id === id));
+    }
+
+    getSelectedHero(): Hero {
+        return this.selectedHero;
+    }
+
+    setSelectedHero(hero: Hero) {
+        this.selectedHero = hero;
     }
 
 }
